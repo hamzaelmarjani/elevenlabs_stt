@@ -71,7 +71,7 @@ impl ElevenLabsSTTClient {
 
         if let Some(file_data) = request.file {
             let part = reqwest::multipart::Part::bytes(file_data)
-                .file_name("audio_file")
+                .file_name("file")
                 .mime_str("application/octet-stream")
                 .map_err(|e| ElevenLabsSTTError::RequestError(e));
 
@@ -124,7 +124,6 @@ impl ElevenLabsSTTClient {
             .client
             .post(&url)
             .header("xi-api-key", &self.api_key)
-            // .header("Content-Type", "multipart/form-data")
             .multipart(form)
             .send()
             .await?;
