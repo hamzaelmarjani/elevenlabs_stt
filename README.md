@@ -24,7 +24,7 @@ A type-safe, async Rust client for the [ElevenLabs Speech-to-Text API](https://e
 - **[Elevenlabs STT](https://crates.io/crates/elevenlabs_stt)**: ElevenLabs Speech-to-Text API. ✅
 - **[Elevenlabs SFX](https://crates.io/crates/elevenlabs_sfx)**: ElevenLabs Sound Effects API. ✅
 - **[Elevenlabs VC](https://crates.io/crates/elevenlabs_vc)**: ElevenLabs Voice Changer API. ✅
-- **Elevenlabs TTV**: ElevenLabs Text-to-Voice API. ⏳
+- **[Elevenlabs TTV](https://crates.io/crates/elevenlabs_ttv)**: ElevenLabs Text To Voice API. ✅
 - **Elevenlabs CM**: ElevenLabs Music Compose API. ⏳
 - **Elevenlabs AUI**: ElevenLabs Audio Isolation API. ⏳
 - **Elevenlabs DUB**: ElevenLabs Dubbing API. ⏳
@@ -35,7 +35,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-elevenlabs_stt = "0.0.3"
+elevenlabs_stt = "0.0.4"
 ```
 
 ## Quick Start
